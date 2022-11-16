@@ -5,12 +5,18 @@
     --white: white; */
 }
 
+body {
+    background-color: #FAFAFA;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* color:var(--white); */
 }
+
+
 
 /* Header styles */
 
@@ -24,16 +30,21 @@
             background-image: url(./images/intro.png);
             background-position: center center;
             background-size: cover;
-            padding: 0 0 200px 0;
+            padding-bottom: 200px;
         }
 
-        /* .text-logo {
-            padding-left: -100px;
-        } */
+        .text-logo {
+            margin-left:-300px;
+            margin-right: 100px;
+        }
         .nav-link-asosiy {
             text-decoration: underline;
         }
     /* /Nav styles */
+    .card {
+        border: none;
+        border-radius: 0%;
+    }
     .intro-welcome {
         margin: 100px 0 0 100px;
         width: 30%;
@@ -50,16 +61,10 @@
         border-radius: 20px;
         padding: 5px 30px 5px 30px;
     }
-
-    .counter-section {
-
-    }
 /* /Intro styles */
 
 /* Blog styles */
-    .blog-section {
-        margin-top: 100px;
-    }
+
 /* /Blog styles */
 
 
@@ -76,6 +81,10 @@
     margin-left: 15px;
 }
 
+.social-links {
+    margin-left: 400px;
+}
+
 footer ul > li {
     list-style: none;
     margin-top: 10px;
@@ -83,10 +92,15 @@ footer ul > li {
 
 .footer-title {
     color:white;
+    margin-bottom: 20px;
 }
 
 .footer-text {
-    color:gray;
+    color:white;
+}
+
+.footer-text > img {
+    margin-right: 10px;
 }
 /* /Footer styles */
 
@@ -130,4 +144,46 @@ footer ul > li {
     width: 100%;
     height: 70px;
     background-color: #252B42;
+}
+
+.counter-section, .features-section, .blog-section {
+    margin-top: 50px;
+}
+
+.features-section > .container {
+    margin-top: 100px;
+}
+
+.contact {
+    background: #FAFAFA;
+    margin-top: 30px;
+}
+
+.contact button {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contacts {
+    margin-top: 150px;
+}
+
+.contacts .card-group {
+    margin-top: 70px;
+}
+
+.contacts img {
+    margin-bottom: 20px;
+}
+
+.contact-center-btn:hover {
+    background-color: #FFC107;
+}
+
+.contact-center-btn, .contacts button:hover {
+    color: white;
+}
+
+.contact-center-btn {
+    border-color: white;
 }
